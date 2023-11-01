@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon-dark.svg" type="image/x-icon">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my personal page!</h1>
+    </header>
+    <button id="sidebar-toggle" style="background-image: url('/assets/css/images/sidebar-svgrepo-com.svg'); width: 50px; height: 50px; border: none; background-size: cover; background-color: transparent;
+        position: absolute;
+        top: 30px;
+        left: 70px;"
+        ></button>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!-- Content goes here -->
+        <section>
+        <div class="card-container">
+            <div class="card">
+                <h2>Repository 1</h2>
+                <p>Description of Repository 1</p>
+                <a href="https://github.com/username/repository1">View on GitHub</a>
+            </div>
+            <div class="card">
+                <h2>Repository 2</h2>
+                <p>Description of Repository 2</p>
+                <a href="https://github.com/username/repository2">View on GitHub</a>
+            </div>
+            <div class="card">
+                <h2>Repository 3</h2>
+                <p>Description of Repository 3</p>
+                <a href="https://github.com/username/repository3">View on GitHub</a>
+            </div>
+        </div>
+        </section>
+    </section>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+        
+
+        <div class="sidebar">
+            <button style="margin-top: 5%; margin-left: 5%;" class="sidebar-close">&times;</button>
+            
+            <ul>
+                <li><a style="font-size: 250%" href="">Home</a></li>
+                <li><a style="font-size: 250%" href="Wiki">Wiki</a></li>
+                <li><a style="font-size: 250%" href="https://github.com/EliasTors">Github profile</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const sidebarToggle = document.getElementById('sidebar-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const sidebarClose = document.querySelector('.sidebar-close');
+            
+            sidebarToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+            });
+
+            sidebarClose.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+            });
+
+        </script>
+
+    </body>
+    </html>
