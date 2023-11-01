@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>My Repositories</h2>
+      <ul>
+        {% for repo in site.github.public_repositories %}
+          <li><a href="{{ repo.html_url }}">{{ repo.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="content">
+      {{ content }}
+    </div>
+  </body>
+</html>
