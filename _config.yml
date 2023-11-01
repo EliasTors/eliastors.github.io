@@ -1,4 +1,6 @@
 title: Elias Torstensen
-description: My personal site
-baseurl: "" 
-url: "https://eliastors.github.io" 
+description: A short description of your site.
+github_username: EliasTors
+
+header_pages:
+  - about.md

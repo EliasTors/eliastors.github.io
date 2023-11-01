@@ -1,52 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="https://github.githubassets.com/favicons/favicon-dark.svg" type="image/x-icon">
+<head>
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      {% for page in site.header_pages %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
 
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <style>
-      .sidebar {
-        max-width: 200px;
-        margin: 20px;
-      }
-      .content {
-        margin-left: 240px;
-        padding: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="sidebar">
-      <h2>My Repositories</h2>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#repoList" aria-expanded="false" aria-controls="repoList">
-        Toggle Repositories
-      </button>
-      <div class="collapse show" id="repoList">
-        <ul class="list-group">
-          {% for repo in site.github.public_repositories %}
-            <li class="list-group-item"><a href="{{ repo.html_url }}">{{ repo.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-
-    <div class="content">
-      {{ content }}
-    </div>
-
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="collapse"]').click(function() {
-          $(this).text(function(i,old){
-            return old=='Toggle Repositories' ?  'Hide Repositories' : 'Toggle Repositories';
-          });
-        });
-      });
-    </script>
-
-  </body>
+  {{ content }}
+</body>
 </html>
