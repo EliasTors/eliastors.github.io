@@ -1,10 +1,4 @@
-lsi: false
-safe: true
-source: \
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+title: Elias Torstensen
+description: My personal site
+baseurl: "" 
+url: "https://eliastors.github.io" 
