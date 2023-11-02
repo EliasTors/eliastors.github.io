@@ -2,6 +2,9 @@ title: Elias Torstensen
 description: A short description of your site.
 github_username: EliasTors
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 
 header_pages:
