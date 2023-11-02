@@ -1,7 +1,6 @@
 # Selenium
 
 ```python
-
 pip install selenium
 
 ```
