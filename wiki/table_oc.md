@@ -4,10 +4,10 @@
     - [Wiki](/wiki/github-pages/wiki.html)
 
 - [Python](/wiki/python/)
-    - [Selenium](/wiki/python/selenium/)
+    - [Selenium](/wiki/python/selenium)
 
-- [C++](/wiki/c++/)
-    - [Arduino](/c++/arduino/)
+- [C++](/wiki/c++)
+    - [Arduino](/c++/arduino)
         - [Sensors](/c++/arduino/sensors)
 
-- [Hardware](/wiki/hardware/)
+- [Hardware](/wiki/hardware)
