@@ -1,5 +1,14 @@
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
+pre {
+  background-color: #282c34; /* Change this to your preferred color */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hljs-keyword {
+  color: #ff6347; /* Change this to your preferred color */
+}
 
 .card-container {
   display: flex;
