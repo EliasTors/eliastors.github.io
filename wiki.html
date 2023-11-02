@@ -1,9 +1,136 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            html {
+                font-family: sans-serif; /* 1 */
+                -ms-text-size-adjust: 100%; /* 2 */
+                -webkit-text-size-adjust: 100%; /* 2 */
+            }
+    
+            pre {
+                background-color: #282c34; /* Change this to your preferred color */
+                padding: 10px;
+                border-radius: 5px;
+            }
+    
+            .hljs-keyword {
+                color: #ff6347; /* Change this to your preferred color */
+            }
+    
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0;
+            }
+    
+            .card {
+                background-color: #333;
+                color: #f2f2f2;
+                padding: 20px;
+                flex-basis: 30%; /* set flex-basis to 30% */
+                box-sizing: border-box;
+                border-radius: 5px;
+                margin-bottom: 20px; /* add margin to create space between cards */
+            }
+    
+            .card a {
+                color: #ff6347;
+                text-decoration: none;
+            }
+    
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: -200px;
+                height: 100%;
+                width: 200px;
+                background-color: #333;
+                color: #f2f2f2;
+                padding: 20px;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            .sidebar ul {
+                margin-top: 15%;
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            .sidebar a {
+                color: #f2f2f2;
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+                border-radius: 5px;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            .sidebar a:hover {
+                background-color: #ff6347;
+            }
+    
+            .sidebar.active {
+                left: 0;
+            }
+    
+            body {
+                background-color: #1a1a1a;
+                color: #f2f2f2;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            /* CSS for tablets */
+            @media (max-width: 768px) {
+                body {
+                    display: block;
+                }
+            }
+    
+            /* CSS for mobile phones */
+            @media (max-width: 480px) {
+                body {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+    
+            header {
+                width: 100%;
+                padding: 20px 0;
+                background-color: #333;
+                color: #f2f2f2;
+                text-align: center;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+    
+            a {
+                color: #f2f2f2;
+                text-decoration: none;
+            }
+    
+            a:hover {
+                color: #ff6347;
+            }
+    
+        </style>
         <link rel="icon" href="https://github.githubassets.com/favicons/favicon-dark.svg" type="image/x-icon">
         <title>Wiki</title>
-        <link rel="stylesheet" href="https://github.com/EliasTors/eliastors.github.io/blob/main/assets/css/style.css">
     </head>
     <body>
         <header>
