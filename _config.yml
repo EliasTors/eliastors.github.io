@@ -2,7 +2,7 @@ title: Elias Torstensen
 description: A short description of your site.
 github_username: EliasTors
 highlighter: rouge
-baseurl: github.com/EliasTors/eliastors.github.io/
+
 
 header_pages:
   - index.html
