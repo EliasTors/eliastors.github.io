@@ -132,12 +132,15 @@ a {
     }
 
 a:hover {
-    color: #4750ff;
+    color: #ff6347;
     text-decoration: underline;
 }
 
 :not(pre) > code {
     background-color: #282c34; /* Change this to your desired color */
-    color: #881313;
+    color: #f2f2f2;
+    padding: 2px 4px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
-
