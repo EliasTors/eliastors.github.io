@@ -136,3 +136,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.markdown-body code {
+    background-color: #282c34;
+    
+    border: 1px solid #686868;
+    border-radius: 4px;
+    padding: 2px 4px;
+}

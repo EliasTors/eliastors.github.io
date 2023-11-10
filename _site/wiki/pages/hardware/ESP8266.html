@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NodeMCU V3</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      
+        <li><a href=""></a></li>
+      
+    </ul>
+  </nav>
+
+  <h1 id="nodemcu-v3">NodeMCU V3</h1>
+
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="driver">Driver</h2>
+
+<p>Start by installing NodeMCU V3 <a href="https://www.wch.cn/download/CH341SER_EXE.html">driver</a></p>
+
+<h2 id="arduino-ide">Arduino IDE</h2>
+<p>Open Arduino IDE</p>
+
+<h3 id="adding-esp8266-to-arduino-ide">Adding ESP8266 to Arduino IDE</h3>
+<p>File &gt; Preferences &gt; Additional Board Manager URLs &gt; Enter <code class="language-plaintext highlighter-rouge">https://arduino.esp8266.com/stable/package_esp8266com_index.json</code> &gt; Ok</p>
+
+<h3 id="installing-the-board">Installing the board</h3>
+<p>Go to Tools &gt; Board &gt; Boards Manager &gt; Type esp8266 &gt; Select version &gt; Install</p>
+
+<h3 id="selecting-esp8266">Selecting ESP8266</h3>
+<p>Go to Tools &gt; Board &gt; ESP8266 Boards &gt; Select NodeMClJ 1 0 (ESP-12E Module)</p>
+
+<p>Go to Tools &gt; port &gt; COMXX</p>
+
+<h1 id="testing-connection">Testing connection</h1>
+<p>You can test if the setup has worked you can try blinking the builtin led</p>
+
+<pre><code class="language-C++">void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);  // Initialize the LED_BUILTIN pin as an output
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, LOW);  // Turn the LED on 
+  // but actually the LED is on; this is because
+  // it is active low on the ESP-01)
+  delay(1000);                      // Wait for a second
+  digitalWrite(LED_BUILTIN, HIGH);  // Turn the LED off by making the voltage HIGH
+  delay(2000);
+}
+</code></pre>
+
+<h1 id="connecting-to-wifi">Connecting to WiFi</h1>
+
+<pre><code class="language-C++">#include &lt;ESP8266WiFi.h&gt;
+
+    const char *ssid =  "YOUR_SSID";     // replace with your wifi ssid and wpa2 key
+    const char *pass =  "YOUR_PASSWORD";
+
+    WiFiClient client;
+
+
+    void setup() {
+        Serial.begin(9600);
+        delay(10);
+
+        Serial.println("");
+        Serial.print("Connecting to ");
+        Serial.println(ssid); 
+
+        WiFi.begin(ssid, pass); 
+        while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.print(".");
+        }
+
+        Serial.println("");
+        Serial.println("WiFi connected"); 
+
+        Serial.print("Connected! IP address: ");
+        Serial.println(WiFi.localIP());
+    }
+
+void loop() {      
+  
+}
+
+</code></pre>
+
+</body>
+</html>
