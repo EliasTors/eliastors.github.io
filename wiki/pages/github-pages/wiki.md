@@ -2,7 +2,7 @@
 
 To create a new page just create a html file in the appropriate category folder. Eks: `/wiki/python/webscraping.html`
 
-Paste the html code from the [_example.html]()
+Paste the html code from the [_example.html](https://raw.githubusercontent.com/EliasTors/eliastors.github.io/main/wiki/_example.html)
 
 Then create a corresponding markdown file in the `/wiki/pages/YOURFOLDER/YOURFILE.md`
 
