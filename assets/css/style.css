@@ -54,10 +54,6 @@ pre {
     border-radius: 5px;
 }
 
-code {
-    color: #282c34; /* Change this to your preferred color */
-}
-
 .hljs-keyword {
     color: #ff6347; /* Change this to your preferred color */
 }
@@ -140,9 +136,3 @@ a:hover {
     text-decoration: underline;
 }
 
-.markdown-body code {
-    background-color: #2050b1 !important;
-    border: 1px solid #686868 !important;
-    border-radius: 4px !important;
-    padding: 2px 4px !important;
-}
