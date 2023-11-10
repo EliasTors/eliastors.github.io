@@ -16,3 +16,7 @@ To create a new category is pretty straight forward. Create a new folder with th
 After that you can create a folder under the `wiki/pages/` and create a md file to add to the start page. The name of this file can be anything you want, just refert to it in the html file. 
 
 To add more pages to category refer to the top of this page
+
+# Notes
+
+- When updating CSS the browser may cache info. To force refresh of css use `Ctrl + F5`
