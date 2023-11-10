@@ -11,3 +11,5 @@
         - [Sensors](/c++/arduino/sensors)
 
 - [Hardware](/wiki/hardware)
+    - [ESP8266](/wiki/hardware/ESP8266)
+
