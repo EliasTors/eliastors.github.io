@@ -132,11 +132,12 @@ a {
     }
 
 a:hover {
-    color: #20b72a;
+    color: #4750ff;
     text-decoration: underline;
 }
 
 :not(pre) > code {
     background-color: #282c34; /* Change this to your desired color */
-    color: #a91717;
+    color: #881313;
 }
+
