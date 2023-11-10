@@ -54,6 +54,10 @@ pre {
     border-radius: 5px;
 }
 
+code {
+    color: #282c34; /* Change this to your preferred color */
+}
+
 .hljs-keyword {
     color: #ff6347; /* Change this to your preferred color */
 }
