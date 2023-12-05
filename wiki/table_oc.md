@@ -12,4 +12,4 @@
 
 - [Hardware](/wiki/hardware)
     - [ESP8266](/wiki/hardware/ESP8266)
-
+    - [Remarkable](/wiki/hardware/remarkable)
