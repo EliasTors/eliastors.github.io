@@ -24,7 +24,7 @@ Exchange *app* for the name of the python file
 ## Code
 This is a basic example to use the html file called *calculate* and set the template folder to root
 
-'''python
+```python
 from flask import Flask, render_template
 
 app = Flask(__name__, template_folder='.')
@@ -33,7 +33,7 @@ app = Flask(__name__, template_folder='.')
 def home():
     return render_template('calculate.html')
 
-'''
+```
 
 
 ## Run website
